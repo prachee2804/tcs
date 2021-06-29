@@ -1,0 +1,12 @@
+#%RAML 1.0
+title: flight_proj
+/flightdata:
+  get:
+    queryParameters:
+      flightno:
+        type: string
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
